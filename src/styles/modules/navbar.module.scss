@@ -1,0 +1,70 @@
+@use '../partials/variables' as *;
+
+.pageHeader {
+  border: 3px solid red;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__mainLinks,
+    &__cartBtn {
+      display: none;
+    }
+
+    &__logo {
+      font-size: clamp(18px, 3vw, 26px);
+      font-weight: bold;
+    }
+
+    &__hamburgerMenu {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 764px) {
+  .pageHeader {
+    .navbar {
+      &__mainLinks {
+        display: flex;
+        gap: 4rem;
+        & > .link {
+          position: relative;
+          line-height: 34px;
+          overflow: hidden;
+
+          &:hover {
+            
+            &::after {
+              bottom: 100%;
+            } 
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            border-bottom: 2px solid $white;
+            width: 100%;
+            background-color: rgba($grey, $alpha: 0.5);
+            transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+          }
+        }
+      }
+      &__cartBtn {
+        display: block;
+      }
+      &__hamburgerMenu {
+        display: none;
+      }
+    }
+  }
+}

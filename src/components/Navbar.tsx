@@ -1,5 +1,8 @@
 import { navLink } from "../interfaces/MyInterfaces"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons'
 
+import style from '../styles/modules/navbar.module.scss'
 
 export default function Navbar() {
 
@@ -23,20 +26,25 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="px-10">
+    <header className={`px-10 ${style.pageHeader}`}>
       <div className="container">
-        <nav>
-          <a href="#">Panto</a>
-          <ul>
+        <nav className={style.navbar}>
+          <a className={style.navbar__logo} href="#">Panto</a>
+          <ul className={style.navbar__mainLinks}>
             {navLinks.map((el, i) => {
               return (
-                <li key={i}>
+                <li className={style.link} key={i}>
                   <a href={el.link}>{el.label}</a>
                 </li>
               )
             } )}
           </ul>
-          
+          <div className={style.navbar__cartBtn}>
+            <FontAwesomeIcon icon={faBagShopping} size="xl"/>
+          </div>  
+          <div className={style.navbar__hamburgerMenu}>
+            <FontAwesomeIcon icon={faBars} size="xl"/>
+          </div>
         </nav>
       </div>
     </header>
