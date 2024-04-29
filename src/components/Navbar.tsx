@@ -39,6 +39,7 @@ export default function Navbar() {
               )
             } )}
           </ul>
+          {/* questi potrebbero essere bottoni o link */}
           <div className={style.navbar__cartBtn}>
             <FontAwesomeIcon icon={faBagShopping} size="xl"/>
           </div>  
