@@ -35,12 +35,11 @@
           position: relative;
           line-height: 34px;
           overflow: hidden;
-          padding: 0 10px;
 
           &:hover {
             
             &::after {
-              bottom: 100%;
+              width: 100%;
             } 
           }
 
@@ -51,10 +50,9 @@
             bottom: 0;
             right: 0;
             left: 0;
-            height: 100%;
-            border-bottom: 2px solid $white;
-            width: 100%;
-            background-color: rgba($grey, $alpha: 0.5);
+            height: 2px;
+            width: 0;
+            background-color: $white;
             transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
           }
         }
