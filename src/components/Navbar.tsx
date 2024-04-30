@@ -29,8 +29,14 @@ export default function Navbar() {
     <header className={`px-10 ${style.pageHeader}`}>
       <div className="container">
         <nav className={style.navbar}>
-          <a className={style.navbar__logo} href="#">Panto</a>
-          <ul className={style.navbar__mainLinks}>
+          <a 
+            aria-label="Homepage link" 
+            className={style.navbar__logo} 
+            href="#"
+          >
+            Panto
+          </a>
+          <ul  className={style.navbar__mainLinks}>
             {navLinks.map((el, i) => {
               return (
                 <li className={style.link} key={i}>
@@ -39,13 +45,16 @@ export default function Navbar() {
               )
             } )}
           </ul>
-          {/* questi potrebbero essere bottoni o link */}
-          <div className={style.navbar__cartBtn}>
+          <a 
+            className={style.navbar__cartBtn} 
+            aria-label="Shopping cart link" 
+            href="#"
+          >
             <FontAwesomeIcon icon={faBagShopping} size="xl"/>
-          </div>  
-          <div className={style.navbar__hamburgerMenu}>
+          </a>
+          <button aria-label="Menu" className={style.navbar__hamburgerMenu}>
             <FontAwesomeIcon icon={faBars} size="xl"/>
-          </div>
+          </button>
         </nav>
       </div>
     </header>

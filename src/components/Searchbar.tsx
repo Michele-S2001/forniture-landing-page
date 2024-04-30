@@ -10,13 +10,15 @@ export default function Searchbar() {
   return (
     <div className={style.searchWrapper}>
       <input
+        aria-label='
+        Write any type of furniture'
         className={style.searchInput}
         type="text"
         placeholder="Search furniture"
         value={input}
         onChange={(e)=>{setInput(e.target.value)}}
       />
-      <button className={style.searchBtn}>
+      <button aria-label='Search' className={style.searchBtn}>
         <FontAwesomeIcon icon={faMagnifyingGlass} />
       </button>
     </div>
