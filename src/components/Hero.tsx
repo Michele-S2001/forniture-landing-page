@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import style from '../styles/modules/hero.module.scss';
+import Searchbar from "./Searchbar";
 
 export default function Hero() {
 
@@ -12,7 +13,7 @@ export default function Hero() {
             <div className={style.innerContent}>
               <h1 className={style.mainTitle}>Make your interior more minimalistic & modern</h1>
               <p className={style.slogan}>Turn your room with panto into a lot more minimalist and modern width ease and speed</p>
-              {/* TODO: Inserire il componente per ricercare le furniture */}
+              <Searchbar />
             </div>
           </div>
         </div>

@@ -1,0 +1,43 @@
+@use '../partials/variables' as *;
+
+.searchWrapper {
+  display: flex;
+  gap: 10px;
+  padding: 0 4px;
+  border-radius: 24px;
+  border: 1px solid $grey;
+  align-items: center;
+  backdrop-filter: blur(5px);
+
+  &:has(.searchInput:focus) {
+    outline: 2px solid $white;
+    outline-offset: 2px;
+  }
+
+  .searchInput {
+    line-height: 42px;
+    padding: 0 5px;
+    font-size: 16px;
+    outline: none;
+    color: $white;
+    
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .searchBtn {
+    background-color: $orange;
+    color: $white;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    vertical-align: middle;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $lightOrange;
+    }
+  }
+}
