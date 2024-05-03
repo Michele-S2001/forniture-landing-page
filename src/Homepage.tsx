@@ -1,3 +1,4 @@
+import Benefits from "./components/Benefits";
 import Hero from "./components/Hero";
 
 function Homepage() {
@@ -5,6 +6,7 @@ function Homepage() {
   return (
     <>
       <Hero />
+      <Benefits />
     </>
   )
 }

@@ -1,0 +1,52 @@
+@use '../partials/variables' as *;
+
+.primaryCard {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  &__title {
+    text-transform: capitalize;
+  }
+
+  &__content {
+    color: $graphite;
+  }
+
+  &__info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: $orange;
+    text-transform: capitalize;
+
+    &:hover {
+      .arrowIcon {
+        animation: arrowMoving 0.3s infinite alternate;
+      }
+    }
+
+    .arrowIcon {
+      user-select: none;
+      font-size: 32px;
+    }
+  }
+}
+
+.normalFontSize {
+  font-size: 24px;
+}
+
+.largeFontSize {
+  font-size: 42px;
+}
+
+@keyframes arrowMoving {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-8px);
+  }
+}

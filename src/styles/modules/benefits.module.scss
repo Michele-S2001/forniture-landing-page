@@ -1,0 +1,15 @@
+.benefits {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 32px;
+    row-gap: 42px;
+
+    .title {
+      font-size: 42px;
+    }
+  }
+}
