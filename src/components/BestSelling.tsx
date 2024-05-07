@@ -8,7 +8,6 @@ export default function BestSelling() {
       <div className="container">
         <div className={style.productsShowcase}>
           <h2 className={style.productsShowcase__title}>Best Selling Products</h2>
-          {/* COMPONENTE CAROSELLO */}
           <Carousel />
         </div>
       </div>
