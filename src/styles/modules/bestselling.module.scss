@@ -1,0 +1,16 @@
+@use '../partials/variables' as *;
+
+.bestSelling {
+  background-color: $grey;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .productsShowcase {
+    text-align: center;
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 34px;
+    }
+  }
+}
