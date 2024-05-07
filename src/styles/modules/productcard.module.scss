@@ -1,0 +1,46 @@
+@use '../partials/variables' as *;
+
+.productCard {
+  max-width: 250px;
+  border-radius: 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  background-color: $white;
+  padding: 10px;
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+  }
+
+  &__info {
+    .product_name {
+      margin-bottom: 7px;
+    }
+    .product_rating {
+      color: $lightOrange;
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  &__add {
+    display: flex;
+    justify-content: space-between;
+
+    .product_addBtn {
+      font-size: 32px;
+      transition: 200ms cubic-bezier(0.23, 1, 0.320, 1);
+
+      &:hover {
+        transform: rotate(360deg) scale(1.5);
+        color: $blue;
+      }
+    }
+  }
+}
