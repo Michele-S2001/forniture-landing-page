@@ -1,0 +1,34 @@
+@use '../partials/variables' as *;
+
+.experiences-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .experiences {
+    &__image {
+      grid-column: 4 / 10;
+      border-radius: 40px;
+      box-shadow: 1px 8px 12px 10px rgba($color: $black, $alpha: 0.2);
+    }
+
+    &__content {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+@media(min-width: 676px) {
+  .experiences-section {
+    .experiences {
+      align-items: center;
+
+      &__image {
+        grid-column: 1 / 6;
+      }
+  
+      &__content {
+        grid-column: 7 / -1;
+      }
+    }
+  }
+}

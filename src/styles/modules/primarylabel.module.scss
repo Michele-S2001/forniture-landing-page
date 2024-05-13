@@ -1,0 +1,6 @@
+@use '../partials/variables' as *;
+
+.primaryLabel {
+  text-transform: uppercase;
+  color: $orange;
+}
