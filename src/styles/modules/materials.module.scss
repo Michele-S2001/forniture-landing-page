@@ -1,0 +1,45 @@
+@use '../partials/variables' as *;
+
+.materials-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+
+  .materials {
+
+    &__image, &__content {
+      grid-column: 1 / -1;
+      grid-row: 1  / -1;
+    }
+    
+    &__image {
+      align-self: center;
+    }
+
+    &__content {
+      background-color: rgba($white, $alpha: 0.7);
+    }
+  }
+}
+
+@media(min-width: 676px) {
+  .materials-section {
+    padding-top: 110px;
+
+    .materials {
+
+      &__image {
+        grid-column: 7 / -1;
+      }
+      
+      &__content {
+        grid-column: 1 / 6;
+      }
+  
+      &__content {
+        background-color: transparent;
+      }
+    }
+
+  }
+    
+}
