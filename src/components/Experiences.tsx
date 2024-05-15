@@ -15,7 +15,7 @@ export default function Experiences() {
     <section className={`px-10 ${style['experiences-section']}`}>
       <div className="container">
         <div className={`${style.experiences} grid`}>
-          <img className={style.experiences__image} src="./img/experience_sofa.jpg" alt="An orange sofa on a neutral white background"/>
+          <img className={style.experiences__image} src="./img/ex_sofa.jpg" alt="An orange sofa on a neutral white background"/>
           <div className={style.experiences__content}>
             <PrimaryLabel text='experiences'/>
             <PrimaryCard title={data.title} content={data.content} more={data.more} titleSize='large' />
