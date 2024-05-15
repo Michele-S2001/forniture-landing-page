@@ -1,5 +1,7 @@
-import style from '../styles/modules/bestselling.module.scss'
-import Carousel from './Carousel'
+import style from '../styles/modules/bestselling.module.scss';
+import Carousel from './Carousel';
+import bestSellingProducts from '../bestSellingProductsData';
+import ProductCard from './ProductCard';
 
 export default function BestSelling() {
 
@@ -8,7 +10,11 @@ export default function BestSelling() {
       <div className="container">
         <div className={style.productsShowcase}>
           <h2 className={style.productsShowcase__title}>Best Selling Products</h2>
-          <Carousel />
+          <Carousel>
+            {bestSellingProducts.map(el => (
+              <ProductCard key={el.id} product={el}/>
+            ))}
+          </Carousel>
         </div>
       </div>
     </section>

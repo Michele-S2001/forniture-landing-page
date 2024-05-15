@@ -1,14 +1,13 @@
 import { useRef } from 'react'
 import style from '../styles/modules/carousel.module.scss'
-import ProductCard from './ProductCard';
-import bestSellingProducts from '../bestSellingProductsData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLeftLong, faRightLong } from '@fortawesome/free-solid-svg-icons';
 
-export default function Carousel() {
+export default function Carousel({ children }) {
 
   const carouselRef = useRef<HTMLDivElement | null>(null);
 
   const handleSliding = (direction: 'left'|'right'):void => {
-    
     if(carouselRef.current) {
       const visibleWidth = carouselRef.current.offsetWidth;
       const scrollAmount = direction === 'right' ? visibleWidth : -visibleWidth;
@@ -19,12 +18,14 @@ export default function Carousel() {
   return (
     <div className={style.carousel}>
       <div className={style.carousel__showcase} ref={carouselRef}>
-        {bestSellingProducts.map(el => (
-          <ProductCard key={el.id} product={el}/>
-        ))}
+        {children}
       </div>
-      <strong className={`${style.leftArrow} ${style.arrow}`} onClick={() => (handleSliding('left'))}>&#8592;</strong>
-      <strong className={`${style.rightArrow} ${style.arrow}`} onClick={() => (handleSliding('right'))}>&#8594;</strong>
+      <strong className={`${style.leftArrow} ${style.arrow}`} onClick={() => (handleSliding('left'))}>
+        <FontAwesomeIcon icon={faLeftLong} />
+      </strong>
+      <strong className={`${style.rightArrow} ${style.arrow}`} onClick={() => (handleSliding('right'))}>
+        <FontAwesomeIcon icon={faRightLong} />
+      </strong>
     </div>
   )
 }
