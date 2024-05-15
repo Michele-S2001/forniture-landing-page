@@ -38,7 +38,7 @@
 }
 
 .largeFontSize {
-  font-size: 42px;
+  font-size: clamp(32px, 4vw, 42px);
 }
 
 @keyframes arrowMoving {
