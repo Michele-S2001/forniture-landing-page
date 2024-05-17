@@ -1,7 +1,7 @@
-import style from '../styles/modules/productcard.module.scss'
+import style from '../../styles/modules/productcard.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import { bestProduct } from '../interfaces/MyInterfaces'
+import { bestProduct } from '../../interfaces/MyInterfaces'
 
 export default function ProductCard({ product }: {product: bestProduct}) {
 

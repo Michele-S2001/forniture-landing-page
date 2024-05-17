@@ -1,4 +1,4 @@
-import style from '../styles/modules/primarycard.module.scss'
+import style from '../../styles/modules/primarycard.module.scss'
 
 interface cardProps {
   title: string;

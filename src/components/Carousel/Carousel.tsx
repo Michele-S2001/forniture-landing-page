@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import style from '../styles/modules/carousel.module.scss'
+import style from '../../styles/modules/carousel.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeftLong, faRightLong } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,6 +1,6 @@
-import style from '../styles/modules/experiences.module.scss';
-import PrimaryCard from './PrimaryCard';
-import PrimaryLabel from './PrimaryLabel';
+import style from '../../../styles/modules/experiences.module.scss';
+import PrimaryCard from '../../Cards/PrimaryCard';
+import PrimaryLabel from '../../Label/PrimaryLabel';
 
 export default function Experiences() {
 

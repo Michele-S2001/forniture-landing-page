@@ -1,0 +1,14 @@
+.testimonials-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .testimonials {
+    text-align: center;
+
+    &__title {
+      font-size: clamp(32px, 3vw, 42px);
+      margin-bottom: 60px;
+      text-transform: capitalize;
+    }
+  }
+}

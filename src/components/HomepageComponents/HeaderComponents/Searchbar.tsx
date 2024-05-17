@@ -1,4 +1,4 @@
-import style from '../styles/modules/searchbar.module.scss'
+import style from '../../../styles/modules/searchbar.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'

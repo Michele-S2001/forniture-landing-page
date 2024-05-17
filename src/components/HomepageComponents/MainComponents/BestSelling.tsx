@@ -1,7 +1,7 @@
-import style from '../styles/modules/bestselling.module.scss';
-import Carousel from './Carousel';
-import bestSellingProducts from '../bestSellingProductsData';
-import ProductCard from './ProductCard';
+import style from '../../../styles/modules/bestselling.module.scss';
+import Carousel from '../../Carousel/Carousel';
+import bestSellingProducts from '../../../bestSellingProductsData';
+import ProductCard from '../../Cards/ProductCard';
 
 export default function BestSelling() {
 

@@ -1,6 +1,6 @@
-import style from '../styles/modules/benefits.module.scss'
-import PrimaryCard from './PrimaryCard'
-import { card } from '../interfaces/MyInterfaces';
+import style from '../../../styles/modules/benefits.module.scss'
+import PrimaryCard from '../../Cards/PrimaryCard'
+import { card } from '../../../interfaces/MyInterfaces';
 
 export default function Benefits() {
 
