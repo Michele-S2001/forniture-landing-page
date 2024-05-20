@@ -1,6 +1,6 @@
 import style from '../../../styles/modules/bestselling.module.scss';
 import Carousel from '../../Carousel/Carousel';
-import bestSellingProducts from '../../../bestSellingProductsData';
+import bestSellingProducts from '../../../staticData/bestSellingProductsData';
 import ProductCard from '../../Cards/ProductCard';
 
 export default function BestSelling() {

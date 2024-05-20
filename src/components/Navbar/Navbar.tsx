@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="container">
         <nav className={style.navbar}>
           <a 
-            aria-label="Homepage link" 
+            aria-label="Homepage link logo" 
             className={style.navbar__logo} 
             href="#"
           >
