@@ -24,7 +24,7 @@ export default function ProductCard({ product }: {product: bestProduct}) {
         <a href="#">
           <h4 className={style.product_name}> {product.name} </h4>
         </a>
-        <div className={style.product_rating}>
+        <div role='group' aria-label={`Stars number: ${product.rating}`} className={style.product_rating}>
           {stars.map((_, idx) => (
             <FontAwesomeIcon icon={faStar} key={idx}/>
           ))}
@@ -32,7 +32,7 @@ export default function ProductCard({ product }: {product: bestProduct}) {
       </div>
       <div className={style.productCard__add}>
         <span className={style.product_price}>{product.price} &euro;</span>
-        <button className={style.product_addBtn}>+</button>
+        <button aria-label='Add to shopping cart' className={style.product_addBtn}>+</button>
       </div>
     </div>
     </>

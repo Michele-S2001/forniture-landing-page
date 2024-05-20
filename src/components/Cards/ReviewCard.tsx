@@ -22,8 +22,8 @@ export default function ReviewCard({ review }: props) {
           className={style.userProfileImg} 
           src={review?.image} />
         <div>
-          <h4 className={style.userProfileName} aria-label='User name'> {review?.name} </h4>
-          <span className={style.userProfileCity} aria-label='City'> {review?.city} </span>
+          <h4 className={style.userProfileName}> {review?.name} </h4>
+          <span className={style.userProfileCity}> {review?.city} </span>
         </div>
         <blockquote>&quot; {review?.textReview} &quot;</blockquote>
       </div>
