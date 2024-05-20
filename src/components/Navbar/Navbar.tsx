@@ -1,8 +1,12 @@
-import { navLink } from "../../interfaces/MyInterfaces"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons'
 
 import style from '../../styles/modules/navbar.module.scss'
+
+interface navLink {
+  label: string;
+  link: string;
+}
 
 export default function Navbar() {
 
