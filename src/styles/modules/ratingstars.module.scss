@@ -1,0 +1,7 @@
+@use '../partials/variables' as *;
+
+.rating {
+  color: $lightOrange;
+  display: flex;
+  gap: 5px;
+}

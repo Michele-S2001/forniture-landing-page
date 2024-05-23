@@ -1,4 +1,5 @@
 import style from '../../styles/modules/reviewcard.module.scss';
+import RatingStars from '../RatingStars/RatingStars';
 
 interface clientReview {
   id: number;
@@ -26,6 +27,7 @@ export default function ReviewCard({ review }: props) {
           <span className={style.userProfileCity}> {review?.city} </span>
         </div>
         <blockquote>&quot; {review?.textReview} &quot;</blockquote>
+        <RatingStars ratingNum={review?.clientRating} />
       </div>
     </div>
   )
