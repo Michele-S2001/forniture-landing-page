@@ -26,11 +26,13 @@
 
     .userProfileName {
       text-transform: capitalize;
+      font-size: 21px;
     }
 
     .userProfileCity {
       text-transform: capitalize;
-      color: $darkGrey;
+      color: rgba($black, $alpha: 0.8);
+      font-weight: 600;
     }
   }
 }

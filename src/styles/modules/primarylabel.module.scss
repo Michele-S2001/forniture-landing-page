@@ -3,4 +3,9 @@
 .primaryLabel {
   text-transform: uppercase;
   color: $orange;
+  background-color: $black;
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: bold;
+  border-radius: 8px;
 }

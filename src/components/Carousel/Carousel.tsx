@@ -17,7 +17,7 @@ export default function Carousel({ children }) {
 
   return (
     <div className={style.carousel}>
-      <div className={style.carousel__showcase} ref={carouselRef}>
+      <div className={style.carousel__showcase} ref={carouselRef} aria-label='Carousel' tabIndex={0}>
         {children}
       </div>
       <strong className={`${style.leftArrow} ${style.arrow}`} onClick={() => (handleSliding('left'))}>
