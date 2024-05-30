@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping, faBars, faX } from '@fortawesome/free-solid-svg-icons'
 
 import style from '../../styles/modules/navbar.module.scss'
+import { useState } from 'react';
 
 interface navLink {
   label: string;
@@ -28,6 +29,11 @@ export default function Navbar() {
       link: '#'
     }
   ]
+
+  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState<boolean>(false);
+  const toggleMobileMenu = () => {
+    setMobileMenuIsOpen((prev) => !prev)
+  }
 
   return (
     <header className={`px-10 ${style.pageHeader}`}>
@@ -56,9 +62,33 @@ export default function Navbar() {
           >
             <FontAwesomeIcon icon={faBagShopping} size="xl"/>
           </a>
-          <button aria-label="Menu" className={style.navbar__hamburgerMenu}>
+          <button 
+            onClick={toggleMobileMenu}
+            aria-label="Open menu" 
+            aria-expanded={mobileMenuIsOpen}
+            className={style.navbar__hamburgerMenu}>
             <FontAwesomeIcon icon={faBars} size="xl"/>
           </button>
+          <div className={`${style['outer-mobileNavbar']} ${ mobileMenuIsOpen ? style['show'] : style['close']}`}>
+            <div style={{ display: 'flex', justifyContent: 'end'}}>
+              <button 
+                onClick={toggleMobileMenu}
+                aria-label='close the menu' 
+                className={style.closingMobileNavbarBtn}>
+                <FontAwesomeIcon icon={faX} size='xl'/>
+              </button>
+            </div>
+            <ul className={style.mobileNavbar}>
+              {navLinks.map((el, idx) => {
+                  return (
+                    <li onClick={toggleMobileMenu} className={style.link} key={idx}>
+                      <a href={el.link}>{el.label}</a>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
