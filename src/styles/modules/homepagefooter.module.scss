@@ -1,0 +1,46 @@
+@use '../partials/variables' as *;
+
+.footerSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $grey;
+  font-size: 16px;
+  
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 54px;
+  
+    & > * {
+      flex-grow: 1;
+      padding: 0 20px;
+    }
+
+    & > *:not(:first-child) {
+      text-align: center;
+    }
+  
+    &__slogan {
+      max-width: 360px;
+      
+      &-title {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .footer-policies {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 14px;
+
+    & > a:first-child {
+      margin-right: auto;
+      font-weight: bold;
+      color: rgba($black, $alpha: 0.6);
+    }
+  }
+}

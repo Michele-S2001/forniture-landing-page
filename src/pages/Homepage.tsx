@@ -1,3 +1,4 @@
+import HomepageFooter from "../components/HomepageComponents/HomepageFooter";
 import HomepageHeader from "../components/HomepageComponents/HomepageHeader";
 import HomepageMain from "../components/HomepageComponents/HomepageMain";
 
@@ -7,6 +8,7 @@ function Homepage() {
     <>
       <HomepageHeader />
       <HomepageMain />
+      <HomepageFooter />
     </>
   )
 }
