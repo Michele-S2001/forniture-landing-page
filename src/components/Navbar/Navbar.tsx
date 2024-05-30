@@ -69,6 +69,7 @@ export default function Navbar() {
             className={style.navbar__hamburgerMenu}>
             <FontAwesomeIcon icon={faBars} size="xl"/>
           </button>
+          {/* MOBILE MENU */}
           <div className={`${style['outer-mobileNavbar']} ${ mobileMenuIsOpen ? style['show'] : style['close']}`}>
             <div style={{ display: 'flex', justifyContent: 'end'}}>
               <button 

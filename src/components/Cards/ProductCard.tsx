@@ -23,7 +23,7 @@ export default function ProductCard({ product }: {product: bestProduct}) {
         <RatingStars ratingNum={product.rating} />
       </div>
       <div className={style.productCard__add}>
-        <span className={style.product_price}>{product.price} &euro;</span>
+        <span tabIndex={0} className={style.product_price}>{product.price} &euro;</span>
         <button aria-label='Add to shopping cart' className={style.product_addBtn}>+</button>
       </div>
     </div>
