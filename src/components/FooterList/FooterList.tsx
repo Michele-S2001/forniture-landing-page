@@ -16,7 +16,7 @@ interface props {
 
 export default function FooterList({ footerLinks }: props) {
   return (
-    <section aria-label="footer links" className={style["footerList"]}>
+    <section className={style["footerList"]}>
       <h4 className={style["footerList__heading"]}>
         {footerLinks.footerCardTitle}
       </h4>

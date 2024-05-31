@@ -36,7 +36,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className={`px-10 ${style.pageHeader}`}>
+    <section className={`px-10 ${style.pageHeader}`}>
       <div className="container">
         <nav className={style.navbar}>
           <a 
@@ -92,6 +92,6 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
-    </header>
+    </section>
   )
 }

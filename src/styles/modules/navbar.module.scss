@@ -39,7 +39,10 @@
         gap: 23px;
 
         & a:active {
-          outline: 2px 2px solid $white;
+          outline: 2px solid $white;
+          outline-offset: 2px;
+          border-radius: 10px;
+          padding: 0 10px;
         }
       }
     }
