@@ -1,5 +1,6 @@
 # Furniture website (IT)
-
+![screenshot del progetto](image.png)
+[Clicca qui per il post su linkedin + video presentazione](https://www.linkedin.com/posts/michele-serafini-08574b1b7_react-typescript-webdevelopment-activity-7202246430663565313-n_1R?utm_source=share&utm_medium=member_desktop)
 ## Descrizione progetto
 
 Questo progetto è una landing page dedicata agli arredamenti, progettato per fornire una navigazione intuitiva e un'esperienza utente ottimale, con un design semplice e responsive. La pagina è strutturata in diverse componenti per facilitare la gestione e lo sviluppo del codice. Questo progetto è stato costruito tramite React.js e Typescript.
@@ -30,6 +31,7 @@ Sono particolarmente contento di questo mini progetto perché mi ha permesso di 
 
 
 # Furniture Website (EN)
+[Click here for the linkedin post + video presentation](https://www.linkedin.com/posts/michele-serafini-08574b1b7_react-typescript-webdevelopment-activity-7202246430663565313-n_1R?utm_source=share&utm_medium=member_desktop)
 
 ## Project Description
 
@@ -60,4 +62,4 @@ I am particularly happy with this mini project because it allowed me to experime
 
 ### Design credits
 
-(Panto furniture landing page design) https://www.kretyastudio.com/product
+[Panto furniture landing page design](https://www.kretyastudio.com/product)
